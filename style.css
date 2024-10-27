@@ -1,0 +1,378 @@
+body{
+    background-color: blueviolet;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid white;
+    background-color: rgb(41, 27, 53);
+    border-top: 2px solid white;
+    border-radius: 20px;
+}
+
+.left-cont{
+    display: flex;
+}
+
+.rigth-cont{
+    display: flex;
+    float: right;
+}
+
+.left-cont p,a{
+    text-decoration: none;
+    margin-left: 20px;
+    color: azure;
+}
+
+.rigth-cont p{
+    color: azure;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.left-cont,.rigth-cont p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.mainbox{
+    margin-top: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.sec-first{
+    display:flex;
+    justify-content: space-between;
+}
+
+.sec-first-left h1,p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: azure;
+}
+
+.btn-box{
+    display: flex;
+    margin-left: 100px;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.btn-box a{
+    text-decoration: none;
+}
+
+.btn-github{
+    margin-left: 50px;
+}
+
+
+.btn-res{
+    margin-right: 200px;
+}
+
+.btn-github,.btn-res{
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+
+.btn-res:hover{
+    border: 1px solid purple;
+    font-size: 25px;
+    color: white;
+    background-color: orange;
+
+}
+
+.btn-github:hover{
+    border: 1px solid purple;
+    font-size: 25px;
+    color: white;
+    background-color: orange;
+}
+
+.sec-serv h1{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: azure;
+}
+
+.sec-serv p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: azure;
+    font-size: 20px;
+}
+
+.web,.andr,.java,.pyth{
+    border: 1px solid white;
+    border-radius: 7px;
+    height: 400px;
+    width: 300px;
+}
+
+.devbox{
+    display: flex;
+    justify-content: space-between;
+}
+
+.web img{
+    margin-top: 8px;
+    margin-left: 0px;
+    height: 250px;
+    width: 280;
+    border-radius: 10px;
+}
+
+.andr img{
+    margin-top: 8px;
+    margin-left: 0px;
+    height: 250px;
+    width: 280;
+    border-radius: 10px;
+}
+
+.java img{
+    margin-top: 8px;
+    margin-left: 0px;
+    height: 250px;
+    width: 280;
+    border-radius: 10px;
+}
+
+.pyth img{
+    margin-top: 8px;
+    margin-left: 10px;
+    height: 250px;
+    width: 280;
+    border-radius: 10px;
+}
+
+.web,.andr,.java,.pyth p{
+    padding: 0px 10px 0px 10px;
+    text-align: center;
+}
+
+.webbtn{
+    margin-top: -10px;
+    margin-left: 0px;
+    width: 250px;
+    height: 50px;
+}
+
+.andrbtn{
+    margin-top: -10px;
+    margin-left: 0px;
+    width: 250px;
+    height: 50px; 
+}
+
+.javabtn{
+    margin-top: -10px;
+    margin-left: 0px;
+    width: 250px;
+    height: 50px; 
+}
+
+.pythbtn{
+    margin-top: -10px;
+    margin-left: 27px;
+    width: 250px;
+    height: 50px;
+}
+
+.webbtn,.andrbtn,.javabtn,.pythbtn{
+   border-radius: 10px;
+   border: none;
+
+}
+
+.webbtn:hover{
+    border: 2px solid rgb(255, 255, 255);
+    font-size: 15px;
+    color: white;
+    background-color: orange;
+}
+
+.andrbtn:hover{
+    border: 2px solid rgb(255, 255, 255);
+    font-size: 15px;
+    color: white;
+    background-color: orange;
+}
+
+.javabtn:hover{
+    border: 2px solid rgb(255, 255, 255);
+    font-size: 15px;
+    color: white;
+    background-color: orange;
+}
+
+.pythbtn:hover{
+    border: 2px solid rgb(255, 255, 255);
+    font-size: 15px;
+    color: white;
+    background-color: orange;
+}
+
+.web:hover{
+   background-color: rgb(147, 148, 165);
+}
+
+.andr:hover{
+    background-color: rgb(147, 148, 165);
+ }
+
+ .java:hover{
+    background-color: rgb(147, 148, 165);
+ }
+
+ .pyth:hover{
+    background-color: rgb(147, 148, 165);
+ }
+
+ .sec-three h1{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: azure;
+ }
+
+ .abtbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;  
+  
+ }
+
+.abtleft{
+    padding: 10px;
+    height: 850px;
+    width: 600px;
+}
+
+.abtleft h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: azure;
+}
+
+
+.abtright{
+    padding: 10px;
+    height: 740px;
+    width: 600px;
+}
+
+.abtleft p{
+    text-align: justify;
+    font-size: large;
+    font-size: 20px;
+
+}
+
+.abtright img{
+    border-radius: 10px;
+    height: 750px;
+    width: 600px;
+}
+
+.sklbox{
+    height: 500px;
+    
+}
+
+.sklleft img{
+    align-content: space-between;
+    border-radius: 10px;
+    margin-left: 100px;
+    float: left;
+    padding: 20px;
+}
+
+.sklleft p{
+    margin-left: 500px;
+}
+
+.sec-ski h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: azure;
+}
+
+.webbox{
+    display: flex;
+    align-items: flex-start;
+    margin-left: 130px;
+}
+
+.sklweb img{
+    border-radius: 10px;
+}
+
+
+.webskltext{
+    width: 500px;
+    margin-left: 20px;
+}
+
+.webskltext h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: azure;
+}
+
+.listwebskl ul{
+    font-family: Arial, Helvetica, sans-serif;
+    color: azure;
+}
+
+.sklandrbox{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px
+}
+
+.sklandrimg img{
+    border-radius: 10px;
+    margin-left: 130px;
+    height: 400px;
+    width: 640px;
+}
+
+.sklandrtext{
+    margin-left: 20px;
+}
+
+.sklandrtext h1,p,ul{
+    font-family: Arial, Helvetica, sans-serif;
+    color: azure;
+}
+
+.footerbox{
+    margin-top: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: rgb(41, 27, 53);
+}
+
+.fhading h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: azure;
+    text-align: center;
+}
+
+.logos{
+    display: flex;
+    align-items: center;
+}
+
+.instalogo img{
+    height: 80px;
+    width: 80px;
+}
+
