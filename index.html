@@ -3,35 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Amit</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Script.js">
 </head>
 
 <body>
     <!-- Adding Nave Bar -->
-    <nav class="nav-bar">
-        <div class="left-cont">
-            <a href="/"><p>Home</p></a>
-            <a href="#serid"><p>Servises</p></a>
-            <a href="#abtid"><p>About</p></a>
-            <a href="#sklid"><p>Skills</p></a>
-            <a href=""><p>Contact</p></a>
-        </div>
-
-        <div class="rigth-cont">
-            <p>Wellcome</p>
-        </div>
-    </nav>
-
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#servid">Services</a>
+        <a href="#abtid">About</a>
+        <a href="#sklid">Skills</a>
+        <a href="#contid">Contact</a>
+    </div>
     <!-- Nave Bar Complit -->
 
     <!-- Adding Main Box -->
-    <div class="mainbox">
-
+    <div class="mainbox" id="homenav">
         <!-- creating a first Section -->
         <div class="sec-first">
             <div class="sec-first-left">
-                <h1>Hello! I'am Amit, a Devloper in base in India.</h1>
+                <h1>Hello! I'am <span style="color: orange;">Amit</span>, a Devloper in base in India.</h1>
                 <p>I love building tools that are user-friendly, simple and delightful. <br>
                     I was a student at Lambda School where I spent 8 months learning the fundamentals of front-end and
                     back-end web development. <br>
@@ -44,7 +37,8 @@
 
                 <div class="btn-box">
                     <div class="btn-git">
-                        <button onclick="window.open('https://github.com/Amit571','_blank')" class="btn-github">GitHub</button>
+                        <button onclick="window.open('https://github.com/Amit571','_blank')"
+                            class="btn-github">GitHub</button>
                     </div>
 
                     <div class="btn-res">
@@ -57,44 +51,49 @@
                 <img src="right.png" alt="">
             </div>
         </div>
+        <hr style="margin-top: 15px;">
         <!-- Section Fisrt Complit -->
 
 
         <!-- Adding section two -->
-        <div class="sec-two">
+        <div class="sec-two" id="servid">
             <div class="sec-serv">
-                <h1>Servises</h1 id="servid">
-                <p>I am, specialize in delivering high-quality solutions across a range of technologies to meet your
-                    business needs:</p>
+                <h1>Servises</h1>
+                <p>
+                    I am, specialize in delivering high-quality solutions across a range of technologies to meet your
+                    business needs:
+                </p>
             </div>
 
             <div class="devbox">
                 <div class="web">
                     <img src="web.png" alt="" class="webimg">
-                    <br>
-                    <p>I provide high-quality web applications tailored to meet your unique business needs.</p>
-                    <button class="webbtn">Web Devlopment</button>
+                    <div class="p-web-cont-div">
+                        <p>I provide high-quality web applications tailored to meet your unique business needs.</p>
+                        <button class="webbtn" onclick="window.open('webdev_index.html', '_blank')">Web Devlopment</button>
+                    </div>
                 </div>
 
                 <div class="andr">
                     <img src="Andro.png" alt="" class="andrimg">
                     <p>I provide high-quality Android applications tailored to meet your unique business needs.</p>
-                    <button class="andrbtn">Android Devlopment</button>
+                    <button class="andrbtn" onclick="window.open('andro_index.html', '_blank')">Android Devlopment</button>
                 </div>
 
                 <div class="java">
                     <img src="java.png" alt="">
                     <p>I provide high-quality Java Programs tailored to meet your unique business needs.</p>
-                    <button class="javabtn">Java Devlopment</button>
+                    <button class="javabtn" onclick="window.open('java_index.html', '_blank')">Java Devlopment</button>
                 </div>
 
                 <div class="pyth">
                     <img src="Pyth.png" alt="" class="pyth">
                     <p>I provide high-quality Python Program tailored to meet your unique business needs.</p>
-                    <button class="pythbtn">Python Devlopment</button>
+                    <button class="pythbtn" onclick="window.open('python_index.html', '_blank')">Python Devlopment</button>
                 </div>
             </div>
         </div><br>
+        <hr style="margin-top: 15px;">
         <!-- Section two Complit -->
 
 
@@ -105,128 +104,313 @@
 
         <div class="abtbox">
             <div class="abtleft">
-                <h1>Self</h1>
-                <p>Name: Amit Shinde<br>
-                    Age: 21<br>
-                    Address: Kalyan<br>
-                    <br>
-                    Hi, I'm Amit, a passionate developer specializing in web, Java, Python, and Android development. I
-                    enjoy solving complex problems and turning ideas into efficient, scalable applications. When I'm not
-                    coding, I love indulging in my hobbies, which include Gaming, exploring new technologies, and
-                    continuously learning to improve my skills.
-                </p>
-
-                <h1>Educatin</h1>
-                <p>
-                    <b>Bachelor of Engineering in Computer Engineering (Pursuing)</b><br>
-                    Mumbai University,2022 – Present <br>
-                    Currently, I am in my 4th year of pursuing a Bachelor’s degree in Computer Engineering. Throughout
-                    my degree, I have enhanced my knowledge in areas like software engineering, algorithms, data
-                    structures, and artificial intelligence, while working on various projects to apply theoretical
-                    concepts in real-world scenarios. <br><br>
+                <div class="abtcontbtn">
+                    <button class="selfbtn abtbtns" onclick="toggalself()">Self</button>
+                    <button class="edubtn abtbtns" onclick="toggaledu()">Education</button>
+                    <button class="currbtn abtbtns" onclick="toggaleexp()">Experience</button>
+                </div>
+                <hr>
 
 
-                    <b>Diploma in Computer Science(2 Years)</b><br>
-                    Adarsh Institute of Technology and Research Centre Vita,,2022 <br>
-                    After my 12th grade, I pursued a 2-year diploma in Computer Science, where I gained hands-on
-                    experience in programming, database management, and computer networks. This course deepened my
-                    understanding of the fundamentals of computing and sparked my passion for software development.
-                    <br><br>
+                <!-- Content Starts -->
+                <!-- Div for About -->
+                <div class="abtcontdiv" id="togabt">
+                    <h1>About Me</h1>
+                    <p>
+                        I am a passionate computer engineer with a strong foundation in software development, artificial
+                        intelligence, and web-based solutions. My experience centers on building efficient, innovative
+                        systems that solve complex problems. I have a solid understanding of programming languages such
+                        as Python, Java, and JavaScript, which I apply in various projects like developing web-based
+                        chatbots, autonomous AI systems, and spam detection applications. <br><br>
+                        I also possess expertise in machine learning, natural language processing, and data analysis,
+                        allowing me to approach challenges with a focus on accuracy and automation. My hands-on approach
+                        to projects, from initial design through testing and refinement, has equipped me with technical
+                        and analytical skills that I continuously strive to advance. I am highly motivated to stay
+                        updated on emerging technologies and am committed to creating impactful solutions that enhance
+                        user experiences and drive efficiency in today’s digital world.
+                    </p>
+                </div>
+                <!-- Div For Self -->
+                <div class="selfcont" id="selfcontid" style="display: none;">
+                    <h1>About Self</h1>
+                    <p>Name: Amit Shinde<br>
+                        Age: 21<br>
+                        Address: Kalyan<br>
+                        <br>
+                        Hi, I’m Amit, a dedicated developer with expertise in web development, Java, Python, and
+                        Android. My passion lies in creating scalable, efficient applications that bring ideas to life
+                        and provide solutions to complex problems. I enjoy every phase of development, from planning and
+                        coding to testing and optimization, and am constantly looking for ways to enhance performance
+                        and user experience. Beyond coding, I’m always exploring emerging technologies to stay updated
+                        and expand my skill set. When I'm not developing, I indulge in gaming, learning about the latest
+                        tech trends, and building my skills to stay sharp and innovative.
+                    </p>
+                </div>
 
-                    <b>12th Grade in Science</b>
-                    Bhartmata Vidyaly, mayni,2018 <br>
-                    I completed my 12th grade with a focus on Science, which laid the foundation for my interest in
-                    technology and computing.
-                </p>
+                <!-- Div For Education -->
+                <div class="educont" id="toggEdu" style="display: none;">
+                    <h1>About Educatin</h1>
+                    <p>
+                        <b>Bachelor of Engineering in Computer Engineering (Pursuing)</b><br>
+                        Mumbai University,2022 – Present <br>
+                        Currently, I am in my 4th year of pursuing a Bachelor’s degree in Computer Engineering.
+                        Throughout
+                        my degree, I have enhanced my knowledge in areas like software engineering, algorithms, data
+                        structures, and artificial intelligence, while working on various projects to apply theoretical
+                        concepts in real-world scenarios. <br><br>
+
+
+                        <b>Diploma in Computer Science(2 Years)</b><br>
+                        Adarsh Institute of Technology and Research Centre Vita,,2022 <br>
+                        After my 12th grade, I pursued a 2-year diploma in Computer Science, where I gained hands-on
+                        experience in programming, database management, and computer networks. This course deepened my
+                        understanding of the fundamentals of computing and sparked my passion for software development.
+                        <br><br>
+
+                        <b>12th Grade in Science</b>
+                        Bhartmata Vidyaly, mayni,2018 <br>
+                        I completed my 12th grade with a focus on Science, which laid the foundation for my interest in
+                        technology and computing.
+                    </p>
+                </div>
+
+                <div class="expcont" id="exptog" style="display: none;">
+                    <h1>About Experience</h1>
+                    <p>
+                        I may not have industry experience, but I've worked on impactful projects including a web-based
+                        chatbot for real-time user assistance, a software-based AI system for autonomous tasks, and a
+                        spam detection system using NLP and classification algorithms, showcasing my skills in AI,
+                        machine learning, and web development.
+                    </p>
+
+                    <p>
+                        Here, Is my Project Overviwe :
+                    </p>
+
+                    <div class="prolist">
+                        <p>
+                            <li>
+                                <b>Web-Based Chatbot:</b><br>Created a web-based chatbot capable of handling real-time
+                                user interactions and responding to queries efficiently. Used natural language
+                                processing (NLP) to enhance conversational abilities and create a seamless user
+                                experience. This project involved integrating API connections, designing a user-friendly
+                                interface, and optimizing response accuracy.
+                            </li><br>
+                            <li>
+                                <b>Software-Based AI System:</b><br>Developed an AI-driven software application designed
+                                to perform specific tasks autonomously. Focused on training machine learning models to
+                                analyze data and make intelligent decisions. This project highlights my proficiency in
+                                working with datasets, model tuning, and ensuring AI reliability for practical
+                                applications.
+                            </li><br>
+                            <li>
+                                <b>Spam Message Detection System:</b><br>Built a system to detect and filter spam
+                                messages using classification algorithms and NLP. Designed to enhance message security
+                                by identifying spam patterns and distinguishing legitimate messages. This project
+                                demonstrates my skills in text analysis, machine learning, and implementing real-time
+                                filtering techniques.
+                            </li>
+                        </p>
+                    </div>
+                </div>
+                <!-- Content Ends -->
             </div>
 
             <div class="abtright">
                 <img src="ppic.png" alt="">
             </div>
         </div>
+        <hr style="margin-top: 15px;">
         <!-- Complit Section three -->
 
 
         <!-- Section Four -->
-        <div class="sec-ski" id="sklid">
-            <h1>Skills</h1>
-        </div>
-
-        <!-- making a box for flex the itams -->
-        <div class="webbox">
-            <div class="sklweb">
-                <img src="webskill.jpg" alt="">
+        <div class="skillpart">
+            <div class="sec-ski" id="sklid">
+                <h1>Skills</h1>
             </div>
-            <div class="webskltext">
-                <h1>Web Devlopment</h1>
-                <p>
-                    I possess strong expertise in a wide range of web development languages and technologies, enabling me to build high-quality, responsive, and scalable web applications. My skill set spans both front-end and back-end development, allowing me to create full-stack solutions that meet modern industry standards.
-                </p>
 
-                <!-- making a div for list -->
-                <div class="listwebskl">
-                    <ul><p>Programin languages That I Know!</p>
-                        <li>HTML5 & CSS3</li>
-                        <li>JavaScript & ES6+</li>
-                        <li>React.js/Vue.js</li>
-                        <li>Version Control with Git:</li>
-                    </ul>
+            <!-- making a box for flex the itams -->
+            <div class="webbox">
+                <div class="sklweb">
+                    <img src="webskill.jpg" alt="">
+                </div>
+                <div class="webskltext">
+                    <h1>Web Devlopment</h1>
+                    <p>
+                        I possess strong expertise in a wide range of web development languages and technologies, enabling
+                        me to build high-quality, responsive, and scalable web applications. My skill set spans both
+                        front-end and back-end development, allowing me to create full-stack solutions that meet modern
+                        industry standards.
+                    </p>
+
+                    <!-- making a div for list -->
+                    <div class="listwebskl">
+                        <ul>
+                            <p>Programin languages That I Know!</p>
+                            <li>HTML5 & CSS3</li>
+                            <li>JavaScript & ES6+</li>
+                            <li>React.js/Vue.js</li>
+                            <li>Version Control with Git:</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <!-- webbox done -->
+
+
+            <!-- making a box for android skill -->
+            <div class="sklandrbox">
+                <div class="sklandrimg">
+                    <img src="skilandroid.png" alt="">
                 </div>
 
-            </div>
-        </div>
-        <!-- webbox done -->
-         
+                <div class="sklandrtext">
+                    <h1>Android Devlopment</h1>
+                    <p>
+                        I possess a strong and comprehensive knowledge of Android development, with extensive experience
+                        working on both front-end and back-end aspects of mobile applications. My expertise encompasses the
+                        following core areas:
+                    </p>
 
-        <!-- making a box for android skill -->
-        <div class="sklandrbox">
-            <div class="sklandrimg">
-                <img src="skilandroid.png" alt="">
-            </div>
+                    <ul>
+                        <p>Programin languages That I Know!</p>
+                        <li>Java</li>
+                        <li>Kotlin</li>
 
-            <div class="sklandrtext">
-                <h1>Android Devlopment</h1>
-                <p>
-                    I possess a strong and comprehensive knowledge of Android development, with extensive experience working on both front-end and back-end aspects of mobile applications. My expertise encompasses the following core areas:
-                </p>
-
-                <ul><p>Programin languages That I Know!</p>
-                    <li>Java</li>
-                    <li>Kotlin</li>
-
-                    <ul> <p>Frame-Work and Librires:</p>
-                        <li>Android SDK</li>
-                        <li>Jetpack Components</li>
-                        <li>AndroidX</li>
-                        <li>Dependency Injection</li>
+                        <ul>
+                            <p>Frame-Work and Librires:</p>
+                            <li>Android SDK</li>
+                            <li>Jetpack Components</li>
+                            <li>AndroidX</li>
+                            <li>Dependency Injection</li>
+                        </ul>
                     </ul>
-                </ul>
+                </div>
             </div>
         </div>
-        
         <!-- making a footer -->
         <div class="footerbox">
             <div class="fhading">
-                <h1>This i am!</h1>
+                <h1>This is am!</h1>
             </div>
+            <div class="contme" id="contid">
+                <p>Contact with Me:</p>
+            </div>
+
+            <form action="">
+                <div class="formparentdiv">
+                    <div class="formdiv">
+                        <div class="name">
+                            <div>
+                                <label for="fname">First Name</label><br>
+                                <input type="text" id="fname" class="fname_text" required
+                                    placeholder="Enter First name">
+                            </div>
+
+                            <div>
+                                <label for="lname">Last Name</label><br>
+                                <input type="text" id="lname" class="lname_text" required placeholder="Enter last name">
+                            </div>
+                        </div>
+
+                        <div class="emailbox">
+                            <div>
+                                <label for="emailtext">Your Email</label>
+                            </div>
+                            <div>
+                                <input type="email" class="emailtext" id="emailtext" required
+                                    placeholder="Enter Your email">
+                            </div>
+                        </div>
+
+                        <div class="msgdiv">
+                            <div>
+                                <label for="msgbox">Your Message</label>
+                            </div>
+                            <div>
+                                <textarea name="msg" id="msgbox" rows="10" cols="30" class="textareabox"
+                                    placeholder="Enter Your Massage For Me!"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="btnparrent">
+                            <div>
+                                <input type="submit" value="SUBMITT" class="subbtn">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
             <div class="logos">
                 <div class="instalogo">
-                    <img src="instapng.png" alt="instalogo">
+                    <a href="https://www.instagram.com/amoo__099/"><img src="instapng.png" alt="instalogo"
+                            class="insta"></a>
                 </div>
-                
+
                 <div class="gitlogo">
-                    <img src="" alt="gitlogo">
-                </div> 
+                    <a href="https://github.com/Amit571"><img src="git.png" alt="gitlogo" class="git"></a>
+                </div>
 
                 <div class="fblogo">
-                    <img src="" alt="fblogo">
-                </div> 
+                    <a href="https://www.facebook.com/"><img src="fb.png" alt="fblogo" class="fb"></a>
+                </div>
             </div>
+
         </div>
 
-    </div> 
+    </div>
     <!-- mainbox end -->
 
+    <!-- Script Start -->
+    <script>
+        var abt = document.getElementById('togabt')
+        var self = document.getElementById('selfcontid')
+        var edu = document.getElementById('toggEdu')
+        var exp = document.getElementById('exptog')
+
+        function toggalself() {
+            if (self.style.display === "none") {
+
+                abt.style.display = "none";
+                exp.style.display = "none";
+                self.style.display = "block";
+                edu.style.display = "none";
+            }
+            else {
+                self.style.display = "none";
+                abt.style.display = "block";
+            }
+        }
+
+        function toggaledu() {
+            if (edu.style.display === "none") {
+                abt.style.display = "none";
+                exp.style.display = "none";
+                edu.style.display = "block";
+                self.style.display = "none";
+            }
+            else {
+                edu.style.display = "none";
+                abt.style.display = "block";
+            }
+        }
+
+        function toggaleexp() {
+            if (exp.style.display === "none") {
+                abt.style.display = "none";
+                self.style.display = "none";
+                edu.style.display = "none";
+                exp.style.display = "block";
+            }
+            else {
+                exp.style.display = "none";
+                abt.style.display = "block";
+            }
+        }
+    </script>
 </body>
 
 </html>

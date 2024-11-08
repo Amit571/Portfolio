@@ -1,14 +1,29 @@
-body{
-    background-color: blueviolet;
+html{
+    scroll-behavior: smooth;
 }
 
-.nav-bar{
-    display: flex;
-    justify-content: space-between;
+body{
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.navbar {
+    position: fixed; 
+    top: 0;         
+    left: 0;
+    width: 100%;     
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
     border-bottom: 2px solid white;
     background-color: rgb(41, 27, 53);
-    border-top: 2px solid white;
-    border-radius: 20px;
+}
+
+a{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
 
 .left-cont{
@@ -37,8 +52,13 @@ body{
     font-size: 15px;
 }
 
+.mainbox p,h1,ul,li{
+    font-family: Arial, Helvetica, sans-serif;
+    color: azure;
+}
+
 .mainbox{
-    margin-top: 20px;
+    margin-top: 50px;
     border: 1px solid white;
     border-radius: 5px;
     padding: 10px;
@@ -49,7 +69,7 @@ body{
     justify-content: space-between;
 }
 
-.sec-first-left h1,p{
+.sec-first-left h1 p{
     font-family: Arial, Helvetica, sans-serif;
     color: azure;
 }
@@ -112,8 +132,8 @@ body{
 }
 
 .web,.andr,.java,.pyth{
-    border: 1px solid white;
-    border-radius: 7px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     height: 400px;
     width: 300px;
 }
@@ -122,6 +142,17 @@ body{
     display: flex;
     justify-content: space-between;
 }
+
+
+/* .web{
+    background-image: url(web.png);
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+}
+
+.p-web-cont-div{
+
+}  */
 
 .web img{
     margin-top: 8px;
@@ -223,20 +254,20 @@ body{
 }
 
 .web:hover{
-   background-color: rgb(147, 148, 165);
+    background-image: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);
 }
 
 .andr:hover{
-    background-color: rgb(147, 148, 165);
- }
+    background-image: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);
+}
 
  .java:hover{
-    background-color: rgb(147, 148, 165);
- }
+    background-image: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);
+}
 
  .pyth:hover{
-    background-color: rgb(147, 148, 165);
- }
+    background-image: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);
+}
 
  .sec-three h1{
     font-size: 30px;
@@ -245,41 +276,75 @@ body{
  }
 
  .abtbox{
+    height: auto;
+    /* border: 1px solid black; */
     display: flex;
     justify-content: center;
     align-items: center;
-    align-content: space-between;  
+    align-content: space-between; 
   
  }
 
+ .abtcontbtn{
+    display: flex;
+    align-content: space-between;
+ }
+
+ .abtbtns{
+    font-weight: 600;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 50px;
+    width: 250px;
+    border-radius: 5px;
+    border: none;
+    margin: 10px;
+ }
+
+ .abtbtns:hover{
+    border: 2px solid rgb(255, 255, 255);
+    font-size: 25px;
+    color: white;
+    background-color: orange;
+ }
+
 .abtleft{
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 100%;
+    /* position: relative; */
     padding: 10px;
-    height: 850px;
+    height: 800px;
     width: 600px;
 }
 
 .abtleft h1{
     font-family: Arial, Helvetica, sans-serif;
     color: azure;
+    color: #ffffff;
 }
-
 
 .abtright{
     padding: 10px;
-    height: 740px;
     width: 600px;
 }
 
-.abtleft p{
-    text-align: justify;
+/* .abtleft p li{
     font-size: large;
     font-size: 20px;
 
-}
+} */
+
+/* .prolist{
+    font-size: 20px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    color: azure;
+} */
 
 .abtright img{
     border-radius: 10px;
-    height: 750px;
+    height: 800px;
     width: 600px;
 }
 
@@ -348,10 +413,10 @@ body{
     margin-left: 20px;
 }
 
-.sklandrtext h1,p,ul{
+/* .sklandrtext h1 p ul{
     font-family: Arial, Helvetica, sans-serif;
     color: azure;
-}
+} */
 
 .footerbox{
     margin-top: 20px;
@@ -366,13 +431,83 @@ body{
     text-align: center;
 }
 
-.logos{
+.contme{
+    text-align: center;
+}
+
+.formparentdiv{
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.instalogo img{
-    height: 80px;
-    width: 80px;
+.formdiv{
+    padding: 10px;
+    color: azure;
+    width: auto;
+    height: auto;
+    border: solid 1px white;
+    border-radius: 10px;
 }
 
+.name{
+    display: flex;
+    align-content: space-between;
+    margin-bottom: 20px;
+    /* font-size: 20px; */
+}
+
+.fname_text{
+    margin-right: 50px;
+}
+
+.fname_text, .lname_text{
+    width: 200px;
+    height: 30px;
+}
+
+.emailbox, .msgdiv,.name{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.emailtext{
+    width: 450px;
+    height: 30px;
+}
+
+.msgdiv{
+    margin-top: 20px;
+}
+
+.textareabox{
+    width: 450px;
+}
+
+.btnparrent{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subbtn{
+    height: 40px;
+    width: 120px;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    margin-bottom: 10px;
+}
+
+.insta,.git,.fb{
+    height: 50px;
+}
