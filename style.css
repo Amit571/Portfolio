@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body{
+  background: url(media/bg.jfif);
+}
+
 /* navbar =====================================================================================*/
 
 .navbar-toggler{
@@ -17,11 +21,25 @@
   }
 
   .nav-link{
-    color: rgb(255, 171, 14) !important;
     font-weight: 600 !important;
     margin-left: 20px;
   }
 
+  .nav-style{
+    color: black;
+    border: solid 2px black;
+    border-radius: 10px;
+  }
+
+  .nav-style:hover{
+    outline: solid 3px rgb(255, 255, 255);
+    background-color: rgb(49, 48, 48);
+    color: white;
+  }
+
+  .nam-text{
+    font-size: 23px;
+  }
 /* Bio box =======================================================================================*/
 
   .bio-box{
@@ -30,11 +48,11 @@
   .row_space{
     display: flex;
     align-items: center;
-    border: solid 1px black;
+    /* border: solid 1px black; */
   }
 
   .colbox{
-    border: solid 1px black;
+    /* border: solid 1px black; */
     display: flex;
     flex-direction: column; 
     justify-content: center; 
@@ -55,8 +73,62 @@
     justify-content: center;
     gap: 20px;
     margin-top:20px;
-    border: solid 1px black;
+    /* border: solid 1px black; */
   }
 
   .btn-seter{
+    border: solid 2px black;
+    border-radius: 20px;
+    padding: 15px;
+    font-size: larger;
+    font-weight: 500;
+    box-sizing: border-box;
+  }
+
+  .btn-seter:hover{
+    outline: solid 3px rgb(255, 255, 255);
+    background-color: rgb(49, 48, 48);
+    color: white;
+    
+  }
+
+  .abt-img-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .img-about{
+    height: 600px;
+  }
+
+  .cont-name{
+    margin-top: 5px;
+    /* border: solid 1px black; */
+    height: 30px;
+    text-align: center;
+  }
+
+  .footerbox{
+    margin-top: 5px;
+    /* border: solid 1px black; */
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .inta , .git , .linkin , .mail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px black;
+    height: 60px;
+    width: 130px;
+    border-radius: 15px;
+  }
+
+  .label-insta , .label-git , .label-link , .label-mail {
+    margin-left: 5px;
   }
