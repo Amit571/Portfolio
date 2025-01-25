@@ -40,47 +40,76 @@
   <div class="container bio-box">
    <div class="row row_space">
     <div class="col colbox">
-      <div class="text-cont">
-        <h1>Hello,</h1>
-        <h2>This Is Amit Shinde,</h2>
-        <h2>I am profissional Software Devloper</h2>
-      </div>
+      <div class="container-ng">
+        <h1>Hello!</h1>
+        <h1>This is Amit &,</h1>
+        <span class="text first-text">I'm a</span>
+        <span class="text sec-text">Freelancer</span>
+    </div>
+    <div class="abt-para">
+      <p>
+        "I'm Amit Shinde, a passionate web developer and freelancer specializing in creating dynamic, user-friendly websites. I have expertise in front-end and back-end development, ensuring seamless digital experiences. With a keen eye for detail and a commitment to quality, I help businesses build their online presence effectively."
+      </p>
+    </div>
       <div class="buttons-div">
-        <button type="button" class=" btn-seter">RESUME</button>
-        <button type="button" class=" btn-seter">GITHUB</button>
+        <a href="media/RESUME.pdf"><button type="button" class=" btn-seter">RESUME</button></a>
+        <a href="https://github.com/Amit571" target="_blank"><button type="button" class=" btn-seter">GITHUB</button></a>
       </div>
     </div>
     <div class="col">
       <div class="abt-img-div">
-        <img src="media/img.jpg" alt="" class="img-about">
+        <img src="media/img.png" alt="" class="img-about">
       </div>
     </div>
    </div>
   </div>
+  
   <div class="container cont-name">
     <h5>Connect with me :</h5>
   </div>
   <div class="container footerbox">
+    <a target="_blank" href="https://www.instagram.com/amoo__099?igsh=OXFkMnplN3FxdmYw">
     <div class="inta">
       <img src="media/instagram.png" alt="" height="30px" width="30px" id="insta-id">
       <label for="insta-id" class="label-insta">Instagram</label>
     </div>
+    </a>
 
-    <div class="git">
+    <a target="_blank" href="https://github.com/Amit571"><div class="git">
       <img src="media/github.png" alt="" height="30px" width="30px" id="git-id">
-      <label for="git-id" class="label-git">Instagram</label>
+      <label for="git-id" class="label-git">GitHub</label>
     </div>
+    </a>
 
-    <div class="linkin">
+    <a target="_blank" href=https://www.linkedin.com/in/amit-code-ninja/""><div class="linkin">
       <img src="media/linkedin.png" alt="" height="30px" width="30px" id="link-id">
       <label for="link-id" class="label-link">Linkedin</label>
     </div>
+    </a>
 
-    <div class="mail">
+    <a target="_blank" href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJfrswCZsMlqhclQkScprcDmhHwvsWmzTsVfQzcBxBXfVrpHTQvfTPkMXTcLWkVkrWWwRBV"><div class="mail">
       <img src="media/mail.png" alt="" height="30px" width="30px" id="mail">
-      <label for="mail-id" class="label-mail">Linkedin</label>
+      <label for="mail-id" class="label-mail">Mail</label>
     </div>
+    </a>
   </div>
+
+  <script>
+    const text = document.querySelector(".sec-text");
+    const textLoad = () => {
+        setTimeout(() => {
+            text.textContent = "Freelancer";
+        }, 0);
+        setTimeout(() => {
+            text.textContent = "Web Developer";
+        }, 2000);
+        setTimeout(() => {
+            text.textContent = "YouTuber";
+        }, 4000);
+    }
+    textLoad();
+    setInterval(textLoad, 6000);
+</script> 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

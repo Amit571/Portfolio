@@ -4,10 +4,8 @@
 }
 
 body{
-  background: url(media/bg.jfif);
+  background-image: url(media/bg.jfif);
 }
-
-/* navbar =====================================================================================*/
 
 .navbar-toggler{
     padding: 0 !important;
@@ -29,6 +27,8 @@ body{
     color: black;
     border: solid 2px black;
     border-radius: 10px;
+    width: 80px;
+    text-align: center;
   }
 
   .nav-style:hover{
@@ -40,19 +40,13 @@ body{
   .nam-text{
     font-size: 23px;
   }
-/* Bio box =======================================================================================*/
-
-  .bio-box{
-  }
 
   .row_space{
     display: flex;
     align-items: center;
-    /* border: solid 1px black; */
   }
 
   .colbox{
-    /* border: solid 1px black; */
     display: flex;
     flex-direction: column; 
     justify-content: center; 
@@ -63,8 +57,11 @@ body{
     text-align: center;
   }
 
-  .text-cont{
-    
+  .abt-para{
+    margin-left: 20px;
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 300;
   }
 
   .buttons-div{
@@ -72,8 +69,6 @@ body{
     align-content: center;
     justify-content: center;
     gap: 20px;
-    margin-top:20px;
-    /* border: solid 1px black; */
   }
 
   .btn-seter{
@@ -89,7 +84,12 @@ body{
     outline: solid 3px rgb(255, 255, 255);
     background-color: rgb(49, 48, 48);
     color: white;
-    
+  }
+
+  .btn-seter:active{
+    color: #000000;
+    background-color: white;
+    outline: #000000;
   }
 
   .abt-img-div{
@@ -99,19 +99,18 @@ body{
   }
 
   .img-about{
+    width: 650px;
     height: 600px;
   }
 
   .cont-name{
     margin-top: 5px;
-    /* border: solid 1px black; */
     height: 30px;
     text-align: center;
   }
 
   .footerbox{
     margin-top: 5px;
-    /* border: solid 1px black; */
     height: 80px;
     display: flex;
     align-items: center;
@@ -129,6 +128,56 @@ body{
     border-radius: 15px;
   }
 
+  .footerbox a{
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  .inta:hover, 
+  .git:hover, 
+  .linkin:hover, 
+  .mail:hover{
+    border: solid 3px black;
+  }
+
+  .inta:active, 
+  .git:active, 
+  .linkin:active, 
+  .mail:active{
+    background-color: #9bdea6;
+    border: solid 5px black;
+  }
+
+
   .label-insta , .label-git , .label-link , .label-mail {
     margin-left: 5px;
+  }
+
+  .container-ng{
+    margin-left: 20px;
+    font-weight: 700;
+    width: 400px;
+    overflow: hidden;
+  }
+
+  .container-ng .text{
+    margin-top: -10px;
+    position: relative;
+    color: #000000;
+    font-size: 30px;
+    font-weight: 700;
+    font-size: 40px;
+  }
+  .container-ng .text.first-text{
+    color: #949191;
+    font-size: 40px;
+  }
+
+  .text.sec-text:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
   }
