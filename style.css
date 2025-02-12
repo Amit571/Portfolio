@@ -1,183 +1,309 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body{
+body {
   background-image: url(media/bg.jfif);
+  background-size: cover;
+  background-position: center;
 }
 
-.navbar-toggler{
-    padding: 0 !important;
-    border: none !important;
+.navbar-toggler {
+  padding: 0 !important;
+  border: none !important;
 }
 
 .navbar-toggler:focus, .navbar-toggler:active {
-    outline: none !important;
-    box-shadow: none !important;
-    border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.nav-link {
+  font-weight: 600 !important;
+  margin-left: 20px;
+}
+
+.nav-style {
+  color: black;
+  border: solid 2px black;
+  border-radius: 10px;
+  width: 80px;
+  text-align: center;
+}
+
+.nav-style:hover {
+  outline: solid 3px rgb(255, 255, 255);
+  background-color: rgb(49, 48, 48);
+  color: white;
+}
+
+.nam-text {
+  font-size: 23px;
+}
+
+.row_space {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+}
+
+.colbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  flex: 1;
+  text-align: center;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.abt-para {
+  margin-left: 20px;
+  text-align: justify;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.buttons-div {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn-seter {
+  border: solid 2px black;
+  border-radius: 20px;
+  padding: 15px;
+  font-size: larger;
+  font-weight: 500;
+  box-sizing: border-box;
+}
+
+.btn-seter:hover {
+  outline: solid 3px rgb(255, 255, 255);
+  background-color: rgb(49, 48, 48);
+  color: white;
+}
+
+.btn-seter:active {
+  color: #000000;
+  background-color: white;
+  outline: #000000;
+}
+
+.abt-img-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-about {
+  width: 100%;
+  height: auto;
+  max-width: 650px;
+}
+
+.cont-name {
+  margin-top: 5px;
+  height: 30px;
+  text-align: center;
+}
+
+.footerbox {
+  margin-top: 5px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* Make icons stack vertically on smaller screens */
+}
+
+.inta, .git, .linkin, .mail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px black;
+  height: 60px;
+  width: 130px;
+  border-radius: 15px;
+  margin: 5px;
+}
+
+.footerbox a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.inta:hover, 
+.git:hover, 
+.linkin:hover, 
+.mail:hover {
+  border: solid 3px black;
+}
+
+.inta:active, 
+.git:active, 
+.linkin:active, 
+.mail:active {
+  background-color: #9bdea6;
+  border: solid 5px black;
+}
+
+.label-insta, .label-git, .label-link, .label-mail {
+  margin-left: 5px;
+}
+
+.container-ng {
+  margin-left: 20px;
+  font-weight: 700;
+  width: 400px;
+  overflow: hidden;
+}
+
+.container-ng .text {
+  margin-top: -10px;
+  position: relative;
+  color: #000000;
+  font-size: 30px;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.container-ng .text.first-text {
+  color: #949191;
+  font-size: 40px;
+}
+
+.text.sec-text:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 1200px) {
+  .img-about {
+      max-width: 100%;
   }
 
-  .nav-link{
-    font-weight: 600 !important;
-    margin-left: 20px;
+  .container-ng {
+      width: 70%;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar-nav {
+      text-align: center;
+      width: 100%;
   }
 
-  .nav-style{
-    color: black;
-    border: solid 2px black;
-    border-radius: 10px;
-    width: 80px;
-    text-align: center;
+  .navbar-nav .nav-item {
+      margin: 5px 0;
   }
 
-  .nav-style:hover{
-    outline: solid 3px rgb(255, 255, 255);
-    background-color: rgb(49, 48, 48);
-    color: white;
+  .colbox {
+      padding: 20px;
+      text-align: center;
   }
 
-  .nam-text{
-    font-size: 23px;
+  .img-about {
+      width: 100%;
+      height: auto;
   }
 
-  .row_space{
-    display: flex;
-    align-items: center;
+  .buttons-div {
+      flex-direction: column;
   }
 
-  .colbox{
-    display: flex;
-    flex-direction: column; 
-    justify-content: center; 
-    height: 100%; 
+  .btn-seter {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
   }
 
-  .center-text{
-    text-align: center;
+  .footerbox {
+      flex-direction: column;
+      height: auto;
   }
 
-  .abt-para{
-    margin-left: 20px;
-    text-align: justify;
-    font-size: 20px;
-    font-weight: 300;
+  .inta, .git, .linkin, .mail {
+      width: 100%;
+      height: 50px;
   }
 
-  .buttons-div{
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    gap: 20px;
+  .footerbox a {
+      width: 100%;
+      text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-ng {
+      font-size: 24px;
+      width: 100%;
   }
 
-  .btn-seter{
-    border: solid 2px black;
-    border-radius: 20px;
-    padding: 15px;
-    font-size: larger;
-    font-weight: 500;
-    box-sizing: border-box;
+  .container-ng .text {
+      font-size: 30px;
   }
 
-  .btn-seter:hover{
-    outline: solid 3px rgb(255, 255, 255);
-    background-color: rgb(49, 48, 48);
-    color: white;
+  .abt-para {
+      font-size: 18px;
   }
 
-  .btn-seter:active{
-    color: #000000;
-    background-color: white;
-    outline: #000000;
+  .img-about {
+      width: 100%;
   }
 
-  .abt-img-div{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .nav-style {
+      width: 100%;
+      margin: 10px 0;
   }
 
-  .img-about{
-    width: 650px;
-    height: 600px;
+  .buttons-div {
+      flex-direction: column;
+      gap: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container-ng .text {
+      font-size: 24px;
   }
 
-  .cont-name{
-    margin-top: 5px;
-    height: 30px;
-    text-align: center;
+  .img-about {
+      width: 80%;
   }
 
-  .footerbox{
-    margin-top: 5px;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+  .btn-seter {
+      padding: 10px;
+      font-size: 14px;
   }
 
-  .inta , .git , .linkin , .mail{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: solid 1px black;
-    height: 60px;
-    width: 130px;
-    border-radius: 15px;
+  .footerbox {
+      gap: 10px;
   }
 
-  .footerbox a{
-    text-decoration: none;
-    color: #000000;
-  }
-  
-  .inta:hover, 
-  .git:hover, 
-  .linkin:hover, 
-  .mail:hover{
-    border: solid 3px black;
+  .inta, .git, .linkin, .mail {
+      width: 120px;
+      height: 45px;
   }
 
-  .inta:active, 
-  .git:active, 
-  .linkin:active, 
-  .mail:active{
-    background-color: #9bdea6;
-    border: solid 5px black;
+  .footerbox a {
+      width: 100%;
+      text-align: center;
   }
+}
 
 
-  .label-insta , .label-git , .label-link , .label-mail {
-    margin-left: 5px;
-  }
-
-  .container-ng{
-    margin-left: 20px;
-    font-weight: 700;
-    width: 400px;
-    overflow: hidden;
-  }
-
-  .container-ng .text{
-    margin-top: -10px;
-    position: relative;
-    color: #000000;
-    font-size: 30px;
-    font-weight: 700;
-    font-size: 40px;
-  }
-  .container-ng .text.first-text{
-    color: #949191;
-    font-size: 40px;
-  }
-
-  .text.sec-text:before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-  }
